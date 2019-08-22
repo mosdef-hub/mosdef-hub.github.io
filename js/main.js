@@ -10,7 +10,7 @@ $(document).ready(function() {
                 let description = repo.description;
                 let name = repo.name
                 name = name.split('_').join(" ");
-                if (description != null){
+                if (description != null && name != 'msibi'){
                 htmlContent += `
                     <div class="col s12 m3">
                     <div class="card small banner-background">
