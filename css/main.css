@@ -1,0 +1,18 @@
+.banner-background {
+    background: linear-gradient(135deg, #141E30, #243B55);
+    position: relative;
+  }
+  
+
+.banner-background .subtitle {
+    font-size: 1.5em;
+    color: #a6a6a6;
+  }
+
+.card {
+    max-height: 200px;
+}
+
+.page-footer {
+    padding-top: 0!important;
+  }
