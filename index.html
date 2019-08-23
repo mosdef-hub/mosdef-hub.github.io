@@ -19,23 +19,28 @@
   <nav>
     <div class="nav-wrapper grey darken-4">
       <div class="container">
-        <a href="#!" class="brand-logo">MoSDeF</a>
+        <a href="index.html" class="brand-logo" id="brandLogo">MoSDeF</a>
         <a href="#" data-target="mobile-page" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="">Publications</a></li>
-          <li><a href="">Announcements</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="./pages/publications.html">Publications</a></li>
+          <li><a href="./pages/announcements.html">Announcements</a></li>
+          <li><a href="./pages/about.html">About</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <ul class="sidenav grey darken-4" id="mobile-page">
-      <li><a href="">Announcements</a></li>
-      <li><a href="">Components</a></li>
-      <li><a href="">About</a></li>
+  <ul class="sidenav sidenav-background" id="mobile-page">
+      <li ><a class="white-text" href="#!"> MoSDeF</a></li>
+    <li ><a class="white-text" href="./pages/publications.html"> <i class="material-icons white-text small left">book</i>  Publications</a></li>
+    <li><div class="divider"></div></li>
+    <li><a  class="white-text" href="./pages/announcements.html"><i class="material-icons white-text small left">announcement</i> Announcements</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="white-text" href="./pages/about.html"> <i class="material-icons small white-text left">people_alt</i> About</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="white-text" id="close-sidenav" class="sidenav-close" href="#!"><i class="material-icons small red-text left">close</i>Close</a></li>
   </ul>
 </header>
-<main>
+<main id="main">
   <div class="section no-pad-bot banner-background">
     <div class="row center">
       <h3 class="white-text"> Molecular Simulation Design Framework (MoSDeF)</h3>
@@ -60,7 +65,7 @@
     <div class="section">
         <h4 class="col s12 light header center">Get Involved</h4>
         <br>
-        <div class="row center valign-wrapper">
+        <div class="row center">
             
             <div class="col s12 m4">
                 <div class="center promo">
@@ -101,11 +106,9 @@
 
 
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="http://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+    <!-- <script src="http://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 

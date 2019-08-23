@@ -1,4 +1,19 @@
 $(document).ready(function() {
+    $('.sidenav').sidenav({onOpenStart: () => {
+                    $('#main').toggleClass('push-left');
+                    $('#brandLogo').toggleClass('hidden');
+                },
+                onCloseStart: () => {
+                    $('#main').toggleClass('push-left');   
+                    $('#brandLogo').toggleClass('hidden');
+                }    
+    }); // Initialize the sidenav
+
+    $('#close-sidenav').click(function() {
+        $('.sidenav').sidenav('close'); // Close the sidenav
+        
+    })
+
     let htmlContent = '';
     fetch('https://api.github.com/orgs/mosdef-hub/repos').then(
         (response) => {
@@ -12,7 +27,7 @@ $(document).ready(function() {
                 name = name.split('_').join(" ");
                 if (description != null && name != 'msibi'){
                 htmlContent += `
-                    <div class="col s12 m3">
+                    <div class="col s12 l4">
                     <div class="card small banner-background">
                         <div class="card-content white-text">
                         <div class="card-title">${name}</div>

@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
 .banner-background {
     background: linear-gradient(135deg, #141E30, #243B55);
     position: relative;
@@ -11,6 +20,24 @@
 
 .card {
     max-height: 200px;
+    /* overflow: scroll; */
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+
+#main {
+  transition: margin-left .5sec
+}
+
+.push-left{
+  margin-left: 300px;
+}
+.sidenav-background{
+  background: linear-gradient(135deg, #141E30, #243B55);
 }
 
 .page-footer {
