@@ -28,6 +28,9 @@ main {
   visibility: hidden;
 }
 
+#vizCanvas{
+  position: relative;
+}
 
 #main {
   transition: margin-left .5sec
