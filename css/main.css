@@ -46,3 +46,7 @@ main {
 .page-footer {
     padding-top: 0!important;
   }
+
+  button:disabled {
+    background-color: black;
+  }
