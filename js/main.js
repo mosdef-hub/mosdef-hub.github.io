@@ -78,11 +78,13 @@ $(document).ready(function() {
                     }
                 }
                 
+                
             });
+            // No longer necessary, decided to hard code
             // console.log(htmlContent);
-            let reposDiv = document.getElementById('ecoSystem');
-            if (reposDiv !== null){
-                reposDiv.innerHTML = htmlContent;
-            }
+            // let reposDiv = document.getElementById('ecoSystem');
+            // if (reposDiv !== null){
+            //     reposDiv.innerHTML = htmlContent;
+            // }
         });
 });
