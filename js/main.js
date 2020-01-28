@@ -27,7 +27,13 @@ $(document).ready(function() {
     $('#close-sidenav').click(function() {
         $('.sidenav').sidenav('close'); // Close the sidenav
         
-    })
+    });
+
+
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
 
     let htmlContent = '';
     fetch('https://api.github.com/orgs/mosdef-hub/repos').then(

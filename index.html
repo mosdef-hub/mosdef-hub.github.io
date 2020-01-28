@@ -2,206 +2,295 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <header>
+<header>
     <nav>
-      <div class="nav-wrapper grey darken-4">
-        <div class="container">
-          <a href="index.html" class="brand-logo" id="brandLogo">MoSDeF</a>
-          <a href="#" data-target="mobile-page" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./pages/publications.html">Publications</a></li>
-            <li><a href="./pages/announcements.html">Announcements</a></li>
-            <li><a href="./pages/about.html">About</a></li>
-          </ul>
+        <div class="nav-wrapper grey darken-4">
+            <div class="container">
+                <a href="index.html" class="brand-logo hide-on-med-and-down" id="brandLogo"><img
+                        width="100px" height="100px"
+                        style="position: relative; z-index: 100"
+                        class="responsive-img" src="images/logo.png" alt="MoSDeF"></a>
+                <a href="#" data-target="mobile-page" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./pages/publications.html">Publications</a></li>
+                    <li><a href="./pages/announcements.html">Announcements</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <ul class="sidenav sidenav-background" id="mobile-page">
-      <li><a class="white-text" href="#!"> MoSDeF</a></li>
-      <li><a class="white-text" href="./pages/publications.html"> <i
-            class="material-icons white-text small left">book</i> Publications</a></li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li><a class="white-text" href="./pages/announcements.html"><i
-            class="material-icons white-text small left">announcement</i> Announcements</a></li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li><a class="white-text" href="./pages/about.html"> <i
-            class="material-icons small white-text left">people_alt</i> About</a></li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li><a class="white-text" id="close-sidenav" class="sidenav-close" href="#!"><i
-            class="material-icons small red-text left">close</i>Close</a></li>
+        <li><a href="index.html" class="brand-logo" id="brandLogo2"><img
+                style="height: 80%"
+                class="responsive-img" src="images/logo.png" alt="MoSDeF"></a></li>
+        <li><a class="white-text" href="./pages/publications.html"> <i
+                class="material-icons white-text small left">book</i> Publications</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="white-text" href="./pages/announcements.html"><i
+                class="material-icons white-text small left">announcement</i> Announcements</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="white-text" href="./pages/about.html"> <i
+                class="material-icons small white-text left">people_alt</i> About</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="white-text" id="close-sidenav" class="sidenav-close" href="#!"><i
+                class="material-icons small red-text left">close</i>Close</a></li>
     </ul>
-  </header>
-  <main id="main">
+</header>
+<main id="main" style="position: relative; z-index: -1">
     <div class="section no-pad-bot banner-background">
-      <div class="row center">
-        <h3 class="white-text"> Molecular Simulation Design Framework (MoSDeF)</h3>
-        <p class="subtitle white-text">MoSDeF presents a set of extensible Python tools designed to facilitate the
-          initialization, <br> atom-typing, and screening of soft matter systems using molecular dynamics simulations.
-        </p>
-      </div>
-      <div class="row center">
-        <a id="get-started-btn" class="btn-large waves-effect waves-light orange darken-1">Get
-          Started!</a>
-      </div>
-      <br>
+        <div class="row center">
+            <h3 class="white-text"> Molecular Simulation Design Framework (MoSDeF)</h3>
+            <p class="subtitle white-text">MoSDeF presents a set of extensible Python tools designed to facilitate the
+                initialization, <br> atom-typing, and screening of soft matter systems using molecular dynamics
+                simulations.
+            </p>
+        </div>
+        <div class="row center">
+            <a id="get-started-btn" class="btn-large waves-effect waves-light orange darken-1">Get
+                Started!</a>
+        </div>
+        <br>
     </div>
 
     <div class="container">
-      <div class="section">
-        <div class="row center">
-          <h4 class="col s12 light header center">Checkout the MoSDeF Ecosystem</h4>
-        </div>
-        <div id="ecoSystem" class="row">
-            <div class="col s12 l4">
-                <div class="card small banner-background">
-                <div class="card-content white-text">
-                <div class="card-title">mbuild</div>
-                <p>A hierarchical, component based molecule builder</p>
-                <span style="position: absolute; top: 2%; right: 2%; border: 2%;" class="circle black valign-wrapper"><i class="material-icons lime-text accent-3">star</i></span>
-                <a  style="margin-right:15%" class="btn-floating halfway-fab waves-effect waves-light black" href=http://mosdef-hub.github.io/mbuild/ target="_blank"><i class="material-icons">more</i></a>
-                <a class="btn-floating halfway-fab waves-effect waves-light black" href=https://github.com/mosdef-hub/mbuild target="_blank"><i class="fa fa-github"></i></a>
-                
-                </div>
-                </div>
-             </div>
+
+        <div class="section">
+            <div class="row center">
+                <h4 class="col s12 light header center">Checkout the MoSDeF Ecosystem</h4>
+            </div>
+            <div id="ecoSystem" class="row">
                 <div class="col s12 l4">
-                <div class="card small banner-background">
-                <div class="card-content white-text">
-                <div class="card-title">foyer</div>
-                <p>A package for atom-typing as well as applying and disseminating forcefields</p>
-                <span style="position: absolute; top: 2%; right: 2%; border: 2%;" class="circle black valign-wrapper"><i class="material-icons lime-text accent-3">star</i></span>
-                <a  style="margin-right:15%" class="btn-floating halfway-fab waves-effect waves-light black" href=http://mosdef-hub.github.io/foyer/ target="_blank"><i class="material-icons">more</i></a>
-                <a class="btn-floating halfway-fab waves-effect waves-light black" href=https://github.com/mosdef-hub/foyer target="_blank"><i class="fa fa-github"></i></a>
-                
+                    <div class="card small banner-background">
+                        <div class="card-content white-text">
+                            <div class="card-title">mbuild</div>
+                            <p>A hierarchical, component based molecule builder</p>
+                            <span style="position: absolute; top: 2%; right: 2%; border: 2%;"
+                                  class="circle black valign-wrapper"><i
+                                    class="material-icons lime-text accent-3">star</i></span>
+                            <a style="margin-right:15%" class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=http://mosdef-hub.github.io/mbuild/ target="_blank"><i
+                                    class="material-icons">more</i></a>
+                            <a class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=https://github.com/mosdef-hub/mbuild target="_blank"><i
+                                    class="fa fa-github"></i></a>
+
+                        </div>
+                    </div>
                 </div>
-                </div>
-             </div>
                 <div class="col s12 l4">
-                <div class="card small banner-background">
-                <div class="card-content white-text">
-                <div class="card-title">forcefield template</div>
-                <p>A template repo for disseminating force fields with foyer</p>
-                <a class="btn-floating halfway-fab waves-effect waves-light black" href=https://github.com/mosdef-hub/forcefield_template target="_blank"><i class="fa fa-github"></i></a>
+                    <div class="card small banner-background">
+                        <div class="card-content white-text">
+                            <div class="card-title">foyer</div>
+                            <p>A package for atom-typing as well as applying and disseminating forcefields</p>
+                            <span style="position: absolute; top: 2%; right: 2%; border: 2%;"
+                                  class="circle black valign-wrapper"><i
+                                    class="material-icons lime-text accent-3">star</i></span>
+                            <a style="margin-right:15%" class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=http://mosdef-hub.github.io/foyer/ target="_blank"><i
+                                    class="material-icons">more</i></a>
+                            <a class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=https://github.com/mosdef-hub/foyer target="_blank"><i class="fa fa-github"></i></a>
+
+                        </div>
+                    </div>
                 </div>
-                </div>
-             </div>
                 <div class="col s12 l4">
-                <div class="card small banner-background">
-                <div class="card-content white-text">
-                <div class="card-title">nanoparticle optimization</div>
-                <p>NanoOpt: Deriving potentials for coarse-grained nanoparticles via potential-matching</p>
-                <a class="btn-floating halfway-fab waves-effect waves-light black" href=https://github.com/mosdef-hub/nanoparticle_optimization target="_blank"><i class="fa fa-github"></i></a>
+                    <div class="card small banner-background">
+                        <div class="card-content white-text">
+                            <div class="card-title">forcefield template</div>
+                            <p>A template repo for disseminating force fields with foyer</p>
+                            <a class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=https://github.com/mosdef-hub/forcefield_template target="_blank"><i
+                                    class="fa fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
-                </div>
-             </div>
                 <div class="col s12 l4">
-                <div class="card small banner-background">
-                <div class="card-content white-text">
-                <div class="card-title">mosdef tutorials</div>
-                <p>A set of tutorials to introduce new users to the MoSDeF (Molecular Simulation Design Framework) toolkit</p>
-                <a class="btn-floating halfway-fab waves-effect waves-light black" href=https://github.com/mosdef-hub/mosdef_tutorials target="_blank"><i class="fa fa-github"></i></a>
+                    <div class="card small banner-background">
+                        <div class="card-content white-text">
+                            <div class="card-title">nanoparticle optimization</div>
+                            <p>NanoOpt: Deriving potentials for coarse-grained nanoparticles via potential-matching</p>
+                            <a class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=https://github.com/mosdef-hub/nanoparticle_optimization target="_blank"><i
+                                    class="fa fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
-                </div>
-             </div>
                 <div class="col s12 l4">
-                <div class="card small banner-background">
-                <div class="card-content white-text">
-                <div class="card-title">mbuild tutorials</div>
-                <p>A set of tutorials to introduce new users to mBuild</p>
-                <a class="btn-floating halfway-fab waves-effect waves-light black" href=https://github.com/mosdef-hub/mbuild_tutorials target="_blank"><i class="fa fa-github"></i></a>
+                    <div class="card small banner-background">
+                        <div class="card-content white-text">
+                            <div class="card-title">mosdef tutorials</div>
+                            <p>A set of tutorials to introduce new users to the MoSDeF (Molecular Simulation Design
+                                Framework) toolkit</p>
+                            <a class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=https://github.com/mosdef-hub/mosdef_tutorials target="_blank"><i
+                                    class="fa fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
-                </div>
-             </div>
                 <div class="col s12 l4">
-                <div class="card small banner-background">
-                <div class="card-content white-text">
-                <div class="card-title">foyer tutorials</div>
-                <p>A set of tutorials to introduce new users to Foyer</p>
-                <a class="btn-floating halfway-fab waves-effect waves-light black" href=https://github.com/mosdef-hub/foyer_tutorials target="_blank"><i class="fa fa-github"></i></a>
+                    <div class="card small banner-background">
+                        <div class="card-content white-text">
+                            <div class="card-title">mbuild tutorials</div>
+                            <p>A set of tutorials to introduce new users to mBuild</p>
+                            <a class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=https://github.com/mosdef-hub/mbuild_tutorials target="_blank"><i
+                                    class="fa fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
+                <div class="col s12 l4">
+                    <div class="card small banner-background">
+                        <div class="card-content white-text">
+                            <div class="card-title">foyer tutorials</div>
+                            <p>A set of tutorials to introduce new users to Foyer</p>
+                            <a class="btn-floating halfway-fab waves-effect waves-light black"
+                               href=https://github.com/mosdef-hub/foyer_tutorials target="_blank"><i
+                                    class="fa fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
-             </div>
 
 
-​
+                ​
+            </div>
         </div>
-      </div>
-      <div class="divider"></div>
-      <div class="section">
-        <h4 class="col s12 light header center">Get Involved</h4>
-        <br>
-        <div class="row center">
 
-          <div class="col s12 m4">
-            <div class="center promo">
-              <i class="material-icons large">question_answer</i>
-              <p class="feature-title">Chat</p>
-              <p class="caption">Having issues with any of the packages or want to contribute to the project? Join us on
-                gitter</p>
-              <a class="btn waves-effect waves-light banner-background" href="https://gitter.im/mosdef-hub/Lobby"
-                target="_blank">Chat</a>
+        <div class="divider"></div>
+        <div class="section">
+            <div class="row center">
+                <h4 class="col s12 light header center">Collaborators</h4>
             </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="center promo">
-              <i class="material-icons large">announcement</i>
-              <p class="feature-title">Check out our recent news</p>
-              <p class="caption">We are constantly grinding for new releases. Please check the latest news page for the
-                latest news.</p>
-              <a class="btn waves-effect waves-light banner-background"
-                href="pages/announcements.html">Announcements</a>
+            <div class="row center">
+                <div class="colab-universities col s12 m4 l3 center">
+                    <a href="https://vanderbilt.edu/" alt="Vanderbilt University" target="_blank">
+                        <img src="images/Vanderbilt_University_logo.svg" alt="Vandy">
+                    </a>
+                </div>
+                <div class="colab-universities col s12 m4 l3 center">
+                    <a href="https://boisestate.edu/" alt="Boise State University" target="_blank">
+                        <img src="images/Boise_State_University_logo.svg" alt="boise">
+                    </a>
+                </div>
+                <div class="colab-universities col s12 m4 l3 center">
+                    <a href="https://udel.edu/" alt="University of Delaware" target="_blank">
+                        <img src="images/University_of_Delaware_wordmark.svg" alt="delaware">
+                    </a>
+                </div>
+                <div class="colab-universities col s12 m4 l3 center">
+                    <a href="https://uh.edu/" alt="University of Houston" target="_blank">
+                        <img src="images/University_of_Houston_logo.svg" alt="houston">
+                    </a>
+                </div>
+
+                <div class="colab-universities col s12 m4 l3 center">
+                    <a href="https://umich.edu/" alt="University of Michigan" target="_blank">
+                        <img src="images/University_of_Michigan_logo.svg" alt="michigan">
+                    </a>
+                </div>
+                <div class="colab-universities col s12 m4 l3 center">
+                    <a href="https://umn.edu/" alt="University of Minessota" target="_blank">
+                        <img src="images/University_of_Minnesota.svg" alt="minessota">
+                    </a>
+                </div>
+                <div class="colab-universities col s12 m4 l3 center">
+                    <a href="https://nd.edu/" alt="University of Notre Dame" target="_blank">
+                        <img src="images/University_of_Notre_Dame_logo.svg" alt="notredame">
+                    </a>
+                </div>
+                <div class="colab-universities col s12 m4 l3 center">
+                    <a href="https://wayne.edu/" alt="Wayne State University" target="_blank">
+                        <img src="images/Wayne_State_University_logo.svg" alt="wayne">
+                    </a>
+                </div>
+                <div class="col s12">
+                    <p class="flow-text"> MoSDeF is supported by the National Science
+                        Foundation under Grant No. 18358741, 1047828 and 1535150.</p>
+                </div>
             </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="center promo">
-              <i class="material-icons large">code</i>
-              <p class="feature-title">Contribute</p>
-              <p class="caption">Contributions are welcome! Just fork any of the projects and submit some PR's or
-                develop your own custom extensions.</p>
-              <a class="btn waves-effect waves-light banner-background" href="https://github.com/mosdef-hub"
-                target="_blank">Contribute</a>
+
+            <div class="divider"></div>
+            <div class="section">
+                <h4 class="col s12 light header center">Get Involved</h4>
+                <br>
+                <div class="row center">
+
+                    <div class="col s12 m4">
+                        <div class="center promo">
+                            <i class="material-icons large">question_answer</i>
+                            <p class="feature-title">Chat</p>
+                            <p class="caption">Having issues with any of the packages or want to contribute to the
+                                project? Join us on
+                                gitter</p>
+                            <a class="btn waves-effect waves-light banner-background"
+                               href="https://gitter.im/mosdef-hub/Lobby"
+                               target="_blank">Chat</a>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="center promo">
+                            <i class="material-icons large">announcement</i>
+                            <p class="feature-title">Check out our recent news</p>
+                            <p class="caption">We are constantly grinding for new releases. Please check the latest news
+                                page for the
+                                latest news.</p>
+                            <a class="btn waves-effect waves-light banner-background"
+                               href="pages/announcements.html">Announcements</a>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="center promo">
+                            <i class="material-icons large">code</i>
+                            <p class="feature-title">Contribute</p>
+                            <p class="caption">Contributions are welcome! Just fork any of the projects and submit some
+                                PR's or
+                                develop your own custom extensions.</p>
+                            <a class="btn waves-effect waves-light banner-background"
+                               href="https://github.com/mosdef-hub"
+                               target="_blank">Contribute</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
         </div>
-      </div>
-    </div>
-  </main>
-  <footer class="page-footer grey darken-4">
+</main>
+<footer class="page-footer grey darken-4">
     <div class="footer-copyright">
-      <div class="container">
-        <span>&#169; 2019 mosdef-hub / <a href="https://my.vanderbilt.edu/mums/" target="_blank">Vanderbilt University</a></span>
-        <a class="grey-text text-lighten-4 right" href="./LICENSE.txt" target="_blank">MIT License</a>
-      </div>
+        <div class="container">
+            <span>&#169; 2019 mosdef-hub / <a href="https://my.vanderbilt.edu/mums/" target="_blank">Vanderbilt University</a></span>
+            <a class="grey-text text-lighten-4 right" href="./LICENSE.txt" target="_blank">MIT License</a>
+        </div>
     </div>
-  </footer>
+</footer>
 
 
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="http://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/3dmolviz.js"></script>
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/3dmolviz.js"></script>
 </body>
 
 </html>
