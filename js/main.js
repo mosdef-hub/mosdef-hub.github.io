@@ -47,13 +47,17 @@ $(document).ready(function() {
                 let name = repo.name
                 name = name.split('_').join(" ");
                 if (description != null && name != 'msibi'){
-                if (name == 'mbuild' || name === 'foyer'){
+                if (name == 'mbuild' || name === 'foyer' or name === 'gmso'){
                     let docsUrl = "";
                     if (name==='mbuild'){
                         docsUrl = "http://mosdef-hub.github.io/mbuild/";
                     }
-                    else{
+                    else if (name==='foyer'){
                         docsUrl = "http://mosdef-hub.github.io/foyer/";
+		    }
+		    else {
+			docsUrl = "http://mosdef-hub.github.io/gmso/";
+		    }
                     }
                     htmlContent += `
                         <div class="col s12 l4">
