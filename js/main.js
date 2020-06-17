@@ -44,7 +44,7 @@ $(document).ready(function () {
         if (!isPaused) {
             $('.carousel').carousel('next')
         }
-    }, 3000);
+    }, 5000);
 
     $('.carousel').hover(() => {
         isPaused = true;
