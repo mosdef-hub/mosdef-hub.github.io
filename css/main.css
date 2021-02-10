@@ -1,22 +1,27 @@
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
+
+small {
+    font-size: 10px;
+}
+
 .banner-background {
     background: linear-gradient(135deg, #141E30, #243B55);
     position: relative;
-  }
-  
+}
+
 
 .banner-background .subtitle {
     font-size: 1.5em;
     color: #a6a6a6;
-  }
+}
 
 .card {
     max-height: 200px;
@@ -24,29 +29,35 @@ main {
 }
 
 .hidden {
-  display: none;
-  visibility: hidden;
+    display: none;
+    visibility: hidden;
 }
 
-#vizCanvas{
-  position: relative;
+#vizCanvas {
+    position: relative;
 }
 
 #main {
-  transition: margin-left .5sec
+    transition: margin-left .5 sec
 }
 
-.push-left{
-  margin-left: 300px;
+.push-left {
+    margin-left: 300px;
 }
-.sidenav-background{
-  background: linear-gradient(135deg, #141E30, #243B55);
+
+.sidenav-background {
+    background: linear-gradient(135deg, #141E30, #243B55);
 }
 
 .page-footer {
-    padding-top: 0!important;
-  }
+    padding-top: 0 !important;
+}
 
-  button:disabled {
+button:disabled {
     background-color: black;
-  }
+}
+
+.colab-universities img {
+    width: 180px;
+    height: 180px;
+}
