@@ -1,52 +1,33 @@
-$(document).ready(function() {
-    let mbhtmlContent = `<div class="col s12 m8 offset-m2"> <ul class="collection">`;
-    
-    fetch('https://api.github.com/repos/mosdef-hub/mbuild/releases').then(
-        (response) => {
-            return response.json()
-        })
-        .then((releases) => {
-            releases.forEach((release, index, records) => {
-                mbhtmlContent += `<li class="collection-item">Release: 
+document.addEventListener('DOMContentLoaded', async function() {
+    const BASE_URL = repoName => `https://api.github.com/repos/mosdef-hub/${repoName}/releases`;
+    const fetchReleasesHTML = async function(repoName){
+        const URL = BASE_URL(repoName);
+        let htmlContent = '<div class="col s12 m8 offset-m2"> <ul class="collection">';
+        try {
+            const releases = await (await fetch(URL)).json();
+            releases.forEach((release) => {
+                htmlContent += `<li class="collection-item">Release:
                                     <a href=" ${release.html_url}" target="_blank"> ${release.name}</a>
                                     Released On: ${new Date(release.published_at).toUTCString()}
                                 </li>`;
-
-            
             });
-            mbhtmlContent += `</ul></div>`;
+            htmlContent += '</ul></div>';
+            return htmlContent;
+        } catch (e) {
+            console.error(e);
+        }
+    };
 
-            let mbreleasesDiv = document.getElementById('mbreleasesDiv');
-            if (mbreleasesDiv !== null){
-                mbreleasesDiv.innerHTML = mbhtmlContent;
-            }
-        });
+    const populateContainer = async function (repoName, targetDivID){
+        const htmlContent = await fetchReleasesHTML(repoName);
+        const targetDiv = document.getElementById(targetDivID);
+        if(targetDiv){
+            targetDiv.innerHTML = htmlContent;
+        }
+    };
 
-        let foyerhtmlContent = `<div class="col s12 m8 offset-m2"> <ul class="collection">`;
-    
-    fetch('https://api.github.com/repos/mosdef-hub/foyer/releases').then(
-        (response) => {
-            return response.json()
-        })
-        .then((releases) => {
-            releases.forEach((release, index, records) => {
-                foyerhtmlContent += `<li class="collection-item">Release: 
-                                    <a href=" ${release.html_url}" target="_blank"> ${release.name}</a>
-                                    Released On: ${new Date(release.published_at).toUTCString()}
-                                </li>`;
-                // console.log(release.name);
-                // console.log(mbhtmlContent);
-                console.log(release);
-            
-            });
-            foyerhtmlContent += `</ul></div>`;
-            // console.log(mbhtmlContent);
+    await populateContainer('mbuild', 'mbReleasesDiv');
+    await populateContainer('foyer', 'foyerReleasesDiv');
+    await populateContainer('gmso', 'gmsoReleasesDiv')
 
-            let freleasesDiv = document.getElementById('freleasesDiv');
-            if (freleasesDiv !== null){
-                freleasesDiv.innerHTML = foyerhtmlContent;
-            }
-        });
-
-        
 });
