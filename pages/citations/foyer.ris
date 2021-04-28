@@ -1,0 +1,31 @@
+TY  - JOUR
+TI  - Formalizing atom-typing and the dissemination of force fields with foyer
+AU  - Klein, Christoph
+AU  - Summers, Andrew Z.
+AU  - Thompson, Matthew W.
+AU  - Gilmer, Justin B.
+AU  - McCabe, Clare
+AU  - Cummings, Peter T.
+AU  - Sallai, Janos
+AU  - Iacovella, Christopher R.
+T2  - Computational Materials Science
+AB  - A key component to enhancing reproducibility in the molecular simulation community is reducing ambiguity in the parameterization of molecular models used to perform a study. Ambiguity in molecular models often stems from inadequate usage documentation of molecular force fields and the fact that force fields are not typically disseminated in a format that is directly usable by software. Specifically, the lack of a generally applicable scheme for the annotation of the rules of a particular force field and a general purpose tool for performing automated parameterization (i.e., atom-typing) based on these rules, may lead to errors in model parameterization that are not easily identified. Here, we present Foyer, an open-source Python tool that enables users to define and apply force field atom-typing rules in a format that is both human- and machine-readable and provides a framework for force field dissemination, thus eliminating ambiguity in atom-typing and improving reproducibility. Foyer defines force fields in an XML format, where SMARTS strings are used to define the chemical context of a particular atom type and “overrides” are used to set rule precedence, rather than a rigid hierarchical scheme. Herein we describe the underlying methodology and force field annotation scheme of the Foyer software, demonstrate its application in several use-cases, and discuss specific aspects of the Foyer approach that are designed to improve reproducibility.
+DA  - 2019/09/01/
+PY  - 2019
+DO  - 10.1016/j.commatsci.2019.05.026
+DP  - ScienceDirect
+VL  - 167
+SP  - 215
+EP  - 227
+J2  - Computational Materials Science
+SN  - 0927-0256
+UR  - http://www.sciencedirect.com/science/article/pii/S0927025619303040
+Y2  - 2019/08/23/16:39:43
+L1  - https://pdf.sciencedirectassets.com/271513/1-s2.0-S0927025619X00099/1-s2.0-S0927025619303040/main.pdf?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEFgaCXVzLWVhc3QtMSJIMEYCIQCerFHlKYdzeqvWRBFcSTtmUJJuph0SQsJ85ghYOLOLEgIhAOpgqJXY0hembhdgh5TSGnQISvcAC4woCn0muZLmCCnVKuMDCPH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQAhoMMDU5MDAzNTQ2ODY1IgzpMuRidgBQu7DQIUYqtwNPOwOtbf2h1mPP74oGGH5kZ1uZc%2FUsylSG1D%2F1A4QFOiSow87X0I77s%2FX3MYcE%2FpaSTjTfVe6dQak9r0lZQ8GSWgOLWFuVa5RPh3qcjs%2BCqFj7FIuqDaVlwOtiXm19PPBawlFxue9tNfS5JaEGGkMtUbii02uMCmFwYErSCZYUvz%2F5uCtV4%2Bc%2BJO%2Frc6ophAYKruKonvBPQANFobmCNL8tBm3TMUKp6BMi1cFE%2FM5qPNZZybdBa%2BojF6P%2FlMOsw%2F%2B2VytyHNnkE%2F8EPwPp4ITQQku%2Fj8jLa6I4a8Zlp2jLUUhlH68MrXYfjhatRy01EL7iiK08OJyHjfWCshbm2ThuvT7shejo2LlHeyATmwHVg6nrpCyQLnkwxmFbPUQhaEBG5Pg3GFM3dJvBbLL%2FyRne95WSGdzZ32QgeOyysiOIQpWy2TYuhtduDCYToGxxW8vfMHQcHM500zFAkQyJAJCdJ5W9t77t0427Kd3az6udBpbgE7Q1LVzKwP24FMAqcs2D7xriIdrKwk9q0gXpzBvLAw5gOHBPLtn4BPtEy5WF%2FxVITcXz9MT4Cx130qYy8nvuKOod%2FYhaMJqcgOsFOrMBFMHkiytCwqFAfoPKbJTSqqA9M%2B8LdkmJ%2BIw851Li5TY9Qz8KlYmFIpQrwcJFeMtgPbL7RAur9pmjPV8JScvhCbwQznAV9U3ktgJHe2D%2BCGQg5Q9TpBhQ6Z2YXGb28FI2xT8JY1v6jB0e4e%2BGB2PsqlBzngNOI0dDsAjndagAy9oltwxAh6tXDJDpYrwcnMIWCAdWD6K%2FCCO103WTb8hu8Ob60NajRIH7XokfnVhjiv4TvQE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190823T163943Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4DCJXJGZ%2F20190823%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=524823422e637037e92120e59bffec3928ac2aae0646c122fc1af6c552fb1bac&hash=83226e9581d7140e3d68dd181173affbb0c9b7b5e24905ca4a896604db7b2979&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0927025619303040&tid=spdf-0b73db97-d8a2-496d-827d-3a0380612581&sid=f240d966911f824fa92b068498b9a9228193gxrqa&type=client
+L2  - https://www.sciencedirect.com/science/article/pii/S0927025619303040
+KW  - Force fields
+KW  - Molecular simulation
+KW  - Open-source software
+KW  - Reproducibility
+ER  - 
+
