@@ -1,0 +1,30 @@
+TY  - JOUR
+TI  - Towards molecular simulations that are transparent, reproducible, usable by others, and extensible (TRUE)
+AU  - Thompson, Matthew W.
+AU  - Gilmer, Justin B.
+AU  - Matsumoto, Ray A.
+AU  - Quach, Co D.
+AU  - Shamaprasad, Parashara
+AU  - Yang, Alexander H.
+AU  - Iacovella, Christopher R.
+AU  - McCabe, Clare
+AU  - Cummings, Peter T.
+T2  - Molecular Physics
+AB  - Systems composed of soft matter (e.g. liquids, polymers, foams, gels, colloids, and most biological materials) are ubiquitous in science and engineering, but molecular simulations of such systems pose particular computational challenges, requiring time and/or ensemble-averaged data to be collected over long simulation trajectories for property evaluation. Performing a molecular simulation of a soft matter system involves multiple steps, which have traditionally been performed by researchers in a ‘bespoke’ fashion, resulting in many published soft matter simulations not being reproducible based on the information provided in the publications. To address the issue of reproducibility and to provide tools for computational screening, we have been developing the open-source Molecular Simulation and Design Framework (MoSDeF) software suite. In this paper, we propose a set of principles to create Transparent, Reproducible, Usable by others, and Extensible (TRUE) molecular simulations. MoSDeF facilitates the publication and dissemination of TRUE simulations by automating many of the critical steps in molecular simulation, thus enhancing their reproducibilitya. We provide several examples of TRUE molecular simulations: All of the steps involved in creating, running and extracting properties from the simulations are distributed on open-source platforms (within MoSDeF and on GitHub), thus meeting the definition of TRUE simulations.
+DA  - 2020/06/01/
+PY  - 2020
+DO  - 10.1080/00268976.2020.1742938
+DP  - Taylor and Francis+NEJM
+VL  - 118
+IS  - 9-10
+SP  - e1742938
+SN  - 0026-8976
+UR  - https://doi.org/10.1080/00268976.2020.1742938
+Y2  - 2021/04/26/21:58:33
+L1  - https://www.tandfonline.com/doi/pdf/10.1080/00268976.2020.1742938
+L2  - https://www.tandfonline.com/doi/full/10.1080/00268976.2020.1742938
+KW  - Molecular dynamics
+KW  - Monte Carlo simulation
+KW  - open-source
+KW  - reproducibility
+ER  -
