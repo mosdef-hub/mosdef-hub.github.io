@@ -17,6 +17,16 @@ small {
     position: relative;
 }
 
+.capabilities-background {
+    background: linear-gradient(135deg, #243B55, #141E30);
+    position: relative;
+}
+
+.capabilities-background .subtitle {
+    font-size: 1.5em;
+    color: #a6a6a6;
+}
+
 
 .banner-background .subtitle {
     font-size: 1.5em;
