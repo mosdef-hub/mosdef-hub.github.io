@@ -32,7 +32,7 @@
         <div class="nav-wrapper grey darken-4">
             <div class="container">
                 <a href="index.html" class="brand-logo hide-on-med-and-down" id="brandLogo"><img
-                        width="100px" height="100px"
+                        width="125px" height="125px"
                         style="position: relative; z-index: 100"
                         class="responsive-img" src="images/logo.png" alt="MoSDeF"></a>
                 <a href="#" data-target="mobile-page" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -41,6 +41,7 @@
                     <li><a href="./pages/publications.html">Publications</a></li>
                     <li><a href="./pages/announcements.html">Announcements</a></li>
                     <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/cite.html">Cite</a></li>
                 </ul>
             </div>
         </div>
@@ -64,6 +65,8 @@
         <li>
             <div class="divider"></div>
         </li>
+        <li><a class="white-text" href="./pages/cite.html"> <i class="material-icons small white-text left">link</i>Cite</a></li>
+        <li><div class="divider"></div></li>
         <li><a class="white-text" id="close-sidenav" class="sidenav-close" href="#!"><i
                 class="material-icons small red-text left">close</i>Close</a></li>
     </ul>
@@ -76,16 +79,57 @@
                 MoSDeF presents a set of extensible Python tools designed to facilitate the initialization,
                 <br> atom-typing, and screening of soft matter systems using molecular simulation.
             </p>
+            <p class="subtitle white-text">
+                The MoSDeF tools have been designed to facilitate the hierarchical construction of both atomistic and coarse-grained <br>
+                system configurations, the application of classical force fields (i.e., atom-typing),<br>
+                encapsulation of chemical topology information, and the generation of input files for a variety of molecular dynamics <br> and Monte Carlo simulation engines, including LAMMPS, GROMACS, HOOMD-Blue, Cassandra, and GOMC.
+            </p>
         </div>
-        <div class="row center">
-            <a id="get-started-btn" class="btn-large waves-effect waves-light orange darken-1">Get
-                Started!</a>
-        </div>
-        <br>
     </div>
 
     <div class="container">
-
+        <div class="section">
+            <div class="row">
+                <div class="col s12 l8">
+                    <img src="./images/summary.png" style="max-width: 100%;" alt="mosdef-slideshow"/>
+                </div>
+                <div class="col s12 l4">
+                    <img src="./images/slideshow.png" style="max-width: 100%;" alt="mosdef-slideshow"/>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <div class="row" style="text-align: justify;">
+                <div class="col s12 l4">
+                    <h4>True Simulations</h4>
+                    <p class="text-justify">
+                        Through the MoSDeF integrated framework, the exact procedures used to set up and perform simulation workflows and associated metadata (i.e. the provenance) can be scripted, encapsulated, version-controlled, preserved, and later reproduced by other researchers. This allows molecular simulation studies to be conducted and published in a manner that is <b>TRUE</b>: <b>Transparent</b>, <b>Reproducible</b>, <b>Usable by others</b>, and <b>Extensible</b>.”
+                    </p>
+                    <img style="max-width: 100%" src="images/TRUESIMS.png" alt="True Simulations"/>
+                </div>
+                <div class="col s12 l4">
+                    <h4>Flexibility</h4>
+                    <p class="text-justify">
+                        System construction and initialization are performed in a simulation engine agnostic fashion, allowing users to use a single set of scripts to generate inputs for a variety of different simulation engines.   
+                        <br>
+                        Because systems are constructed in a hierarchical, scriptable fashion, modifications to system chemistry can be easily made, allowing for screening over chemical space.
+                    </p>
+                </div>
+                <div class="col s12 l4">
+                    <h4>Community</h4>
+                    <p class="text-justify">
+                        MoSDeF is designed to allow system construction scripts to be easily made into easy to distribute libraries; similarly, forcefield files contain parameters and their usage rules that can be easily shared and version controlled. 
+                    </p>
+                    
+                    <a href="#"><h6>Join the mailing list</h6></a>
+                    <a href="#"><h6>MoSDeF Examples</h6></a>
+                    <a href="#"><h6>MoSDeF Tutorials</h6></a>
+                    <a href="#"><h6>Github Landing Page</h6></a>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
         <div class="section">
             <div class="row center">
                 <h4 class="col s12 light header center">Checkout the MoSDeF Ecosystem</h4>
