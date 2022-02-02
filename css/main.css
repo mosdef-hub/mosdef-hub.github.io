@@ -64,3 +64,26 @@ button:disabled {
     width: 180px;
     height: 180px;
 }
+
+.slide-icon {
+    cursor: pointer;
+}
+
+#pdf-container {
+    position: relative;
+}
+
+i#prevSlide {
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    z-index: 1000;
+    display: none;
+}
+
+i#nextSlide {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    display: none;
+}

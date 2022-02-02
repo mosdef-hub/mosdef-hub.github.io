@@ -96,7 +96,14 @@
             </div>
             <div class="row">
                 <div class="col s12 l8">
-                    <img src="./images/summary.png" style="max-width: 100%;" alt="mosdef-slideshow"/>
+                    <div id="pdf-container" class="hide-on-med-and-down">
+                          <div id="slideLoader" class="progress" style="width: 100%; background-color: maroon">
+                              <div class="determinate"></div>
+                          </div>
+                        <i id="prevSlide" class="slide-icon fa fa-chevron-left fa-2x"></i>
+                        <i id="nextSlide" class="slide-icon fa fa-chevron-right fa-2x"></i>
+                        <canvas id="pdf-canvas" class="carousel-item"></canvas>
+                    </div>
                 </div>
                 <div class="col s12 l4">
                     <img src="./images/slideshow.png" style="max-width: 100%;" alt="mosdef-slideshow"/>
@@ -109,7 +116,14 @@
                 <div class="col s12 l4">
                     <h4>True Simulations</h4>
                     <p class="text-justify">
-                        Through the MoSDeF integrated framework, the exact procedures used to set up and perform simulation workflows and associated metadata (i.e. the provenance) can be scripted, encapsulated, version-controlled, preserved, and later reproduced by other researchers. This allows molecular simulation studies to be conducted and published in a manner that is <b>TRUE</b>: <b>Transparent</b>, <b>Reproducible</b>, <b>Usable by others</b>, and <b>Extensible</b>.”
+                        Through the MoSDeF integrated framework, the exact procedures used to set up and perform
+                        simulation workflows and associated metadata (i.e. the provenance) can be scripted,
+                        encapsulated, version-controlled, preserved, and later reproduced by other researchers. This
+                        allows molecular simulation studies to be conducted and published in a manner that is <b>TRUE
+                    </b>: &ldquo;<b>Transparent</b>, <b>Reproducible</b>, <b>Usable by others</b>, and <b>Extensible
+                    </b>.&rdquo; The following <a
+                            href="https://www.tandfonline.com/doi/full/10.1080/00268976.2020.1742938"
+                            target="_blank">paper</a> highlights these principles in details.
                     </p>
                     <img style="max-width: 100%" src="images/TRUESIMS.png" alt="True Simulations"/>
                 </div>
@@ -119,7 +133,14 @@
                         System construction and initialization are performed in a simulation engine agnostic fashion, allowing users to use a single set of scripts to generate inputs for a variety of different simulation engines.
                         <br>
                         Because systems are constructed in a hierarchical, scriptable fashion, modifications to system chemistry can be easily made, allowing for screening over chemical space.
+                        <div class="hide-on-med-and-down">
+                            <br>
+                        </div>
                     </p>
+                    <div class="center-align">
+                        <img style="max-width: 100%;" src="images/flexibility.png"
+                             alt="Flexibility"/>
+                    </div>
                 </div>
                 <div class="col s12 l4">
                     <h4>Community</h4>
@@ -127,31 +148,63 @@
                         MoSDeF is designed to allow system construction scripts to be easily made into easy to distribute libraries; similarly, forcefield files contain parameters and their usage rules that can be easily shared and version controlled.
                     </p>
 
-                    <a href="#"><h5>Join the mailing list</h5></a>
-                    <a href="#"><h5>MoSDeF Examples</h5></a>
-                    <a href="#"><h5>MoSDeF Tutorials</h5></a>
-                    <a href="#"><h5>Github Landing Page</h5></a>
+                    <a href="https://groups.google.com/g/mosdef-users"
+                       target="_blank"><h6>Join the mailing list</h6></a>
+                    <a href="https://gitter.im/mosdef-hub/Lobby" target="_blank"><h6>Mosdef Gitter </h6></a>
+                    <a href="https://github.com/mosdef-hub" target="_blank"><h6>Github Organization</h6></a>
+                    <img src="images/community.png" style="max-width: 100%" alt="community"/>
                 </div>
             </div>
         </div>
         <div class="divider"></div>
         <div class="section">
             <div class="row center">
-                <h4 class="col s12 light header center">Quick Start</h4>
+                <h4 id="ecoSystem" class="col s12 light header center">Quick Start</h4>
             </div>
             <div class="row">
                 <h7 class="black-text">
                     The easiest way to get started with <b>MoSDeF</b> is to go through our tutorials. Below is a
                     curated list of quick start guides:
                 </h7>
-                <div class="col l-6 s-12">
+                <div class="col l6 m8 s12">
                     <div class="collection">
-                        <div class="collection-item black-text"><b>MoSDeF Tutorials</b>: A curated list of
+                        <div class="collection-item black-text">
+                            <b>MoSDeF Tutorials</b>: Curated
                             tutorials for the <b>MoSDeF</b> Framework
-                            <a target="_blank"
-                               href="https://mybinder.org/v2/gh/mosdef-hub/mbuild_tutorials/master"
-                               rel="nofollow">
-                            <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="Binder" data-canonical-src="https://mybinder.org/badge.svg" style="max-width: 100%;"></a>
+                            <div style="float: right">
+                              <a class="black-text" href="https://github.com/mosdef-hub/mosdef_tutorials" target="_blank"><i
+                                    class="fa fa-github fa-2x"></i></a>
+                                <a target="_blank"
+                                href="https://mybinder.org/v2/gh/mosdef-hub/mbuild_tutorials/master"
+                                rel="nofollow">
+                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="Binder" data-canonical-src="https://mybinder.org/badge.svg" style="max-width: 100%;"></a>
+                            </div>
+                        </div>
+                        <div class="collection-item black-text">
+                                    <b>mBuild Tutorials</b>: A curated list of tutorials for mBuild
+                            <div style="float: right">
+                                <a class="black-text"
+                                           href="https://github.com/mosdef-hub/mbuild_tutorials"
+                                   target="_blank"><i
+                                        class="fa fa-github fa-2x"></i></a>
+                                <a target="_blank"
+                                   href="https://mybinder.org/v2/gh/mosdef-hub/mbuild_tutorials/master"
+                                   rel="nofollow">
+                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="Binder" data-canonical-src="https://mybinder.org/badge.svg" style="max-width: 100%;"></a>
+                            </div>
+                        </div>
+                        <div class="collection-item black-text">
+                            <b>Foyer Tutorials</b>: Curated
+                            tutorials for the foyer
+                            <div style="float: right">
+                              <a class="black-text" href="https://github.com/mosdef-hub/foyer_tutorials"
+                                 target="_blank"><i
+                                    class="fa fa-github fa-2x"></i></a>
+                                <a target="_blank"
+                                href="https://mybinder.org/v2/gh/mosdef-hub/foyer_tutorials/master"
+                                rel="nofollow">
+                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="Binder" data-canonical-src="https://mybinder.org/badge.svg" style="max-width: 100%;"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,7 +215,7 @@
             <div class="row center">
                 <h4 class="col s12 light header center">Foundational MoSDeF Repositories</h4>
             </div>
-            <div id="ecoSystem" class="row">
+            <div class="row">
                 <div class="col s12 l4">
                     <div class="card small banner-background">
                         <div class="card-content white-text">
@@ -234,12 +287,23 @@
                 <div class="col s12 l6">
                     <h5>Projects Using MoSDeF</h5>
                     <div class="collection">
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/forcefield_template" target="_blank"><b>MoSDeF Cassandra</b>: A template repo for disseminating force fields with foyer</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/nanoparticle_optimization" target="_blank"><b>Nanoparticle Optimization</b>: Deriving potentials for coarse-grained nanoparticles via potential-matching</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/msibi" target="_blank"><b>MultiState Boltzmann Inversion (MS-IBI)</b>: Manage and run pair potential optimizations using multistate iterative Boltzmann inversion</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/mosdef_tutorials" target="_blank"><b>MoSDeF Tutorials</b>: A set of tutorials to introduce new users to the MoSDeF (Molecular Simulation Design Framework) toolkit</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/mbuild_tutorials" target="_blank"><b>mBuild Tutorials</b>: A set of tutorials to introduce new users to mBuild</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/foyer_tutorials" target="_blank"><b>foyer Tutorials</b>: A set of tutorials to introduce new users to foyer</a>
+                        <a class="collection-item black-text" href="https://github.com/MaginnGroup/mosdef_cassandra" target="_blank"><b>MoSDeF
+                            Cassandra</b>:
+                            MoSDeF compatible wrapper for Cassandra Monte Carlo code</a>
+                        <a class="collection-item black-text" href="https://github.com/cmelab/planckton" target="_blank"><b>planckton</b>: Reproducible
+                            exploration of organic photovoltaic morphology self-assembly using molecular dynamics.</a>
+                        <a class="collection-item black-text"
+                           href="https://github.com/colinebunner/MoSDeF-CP2K-Writer" target="_blank"><b>ModDeF
+                            -CP2K-Writer</b>: Scripted control and better documentation of CP2K simulations in accord
+                            with
+                            the goals of the CSSI MoSDeF project</a>
+                        <a class="collection-item black-text" href="https://github.com/gmso_showcase"
+                           target="_blank"><b>GMSO Showcase</b>: Interactive demo/tutorial of current GMSO features and design decisions.</a>
+                        <a class="collection-item black-text" href="https://github.com/cmelab/grits"
+                           target="_blank"><b>GRiTS</b>: GRiTS Reduces/Restores Topology with SMILES</a>
+                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/mosdef-workflows"
+                           target="_blank"><b>MoSDeF Workflows</b>: Sample molecular simulation workflows using
+                            MoSDeF</a>
                     </div>
                 </div>
             </div>
@@ -429,7 +493,16 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"
+        integrity="sha512-qa1o08MA0596eSNsnkRv5vuGloSKUhY09O31MY2OJpODjUVlaL0GOJJcyt7J7Z61FiEgHMgBkH04ZJ+vcuLs/w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js" integrity="sha512-S9Dwzi4TCjPQkxlaXsqQLj2gXUjPZk4HBzE7zWU6Itc1r2RNmlBrVLH4EsYQrdnzLgvkN8P7l9SCru+2I4rZwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf_viewer.min.css" integrity="sha512-QgMseQTq9BTHUqgaL1BvhJeR/LzcBL1pqisRRZycVB+wf5yu8Qwl+4Hm0gDBMEc0Iko/rv4YZpfLFH/Vql6h5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf_viewer.min.js" integrity="sha512-HHaazac37S06LqVUJyMJflHrqLu4oqg//lOiiI1aCkRFnVtcym4zMhMVWFILeYX5aefDH6wQy6SWInAvdGxrRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
+<script src="js/slide-show.js"></script>
 </body>
 
 </html>

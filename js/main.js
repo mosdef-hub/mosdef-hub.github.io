@@ -36,6 +36,11 @@ $(document).ready(function () {
         indicators: true
     });
 
+     $('.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
+
     $('.carousel').carousel({
         duration: 200
     });
