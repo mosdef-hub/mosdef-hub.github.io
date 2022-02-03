@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -60,4 +63,29 @@ button:disabled {
 .colab-universities img {
     width: 180px;
     height: 180px;
+}
+
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #c0ca33;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+    opacity: 0.5;
+}
+
+.carousel .indicators .indicator-item:hover {
+    opacity: 0.8;
+}
+
+
+.carousel .indicators .indicator-item.active {
+    background-color: #ffab00;
+    opacity: 0.8;
 }
