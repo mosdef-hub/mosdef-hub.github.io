@@ -15,10 +15,17 @@
 
     <!-- Google Analytics -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-181290361-1', 'auto');
         ga('send', 'pageview');
@@ -50,6 +57,10 @@
         <li><a href="index.html" class="brand-logo" id="brandLogo2"><img
                 style="height: 80%"
                 class="responsive-img" src="images/logo.png" alt="MoSDeF"></a></li>
+        <li><a class="white-text" href="./index.html"> <i
+                class="material-icons white-text small left">home</i> Home</a></li>
+        <li>
+            <div class="divider"></div>
         <li><a class="white-text" href="./pages/publications.html"> <i
                 class="material-icons white-text small left">book</i> Publications</a></li>
         <li>
@@ -65,8 +76,11 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li><a class="white-text" href="./pages/cite.html"> <i class="material-icons small white-text left">link</i>Cite</a></li>
-        <li><div class="divider"></div></li>
+        <li><a class="white-text" href="./pages/cite.html"> <i class="material-icons small white-text left">link</i>Cite</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
         <li><a class="white-text" id="close-sidenav" class="sidenav-close" href="#!"><i
                 class="material-icons small red-text left">close</i>Close</a></li>
     </ul>
@@ -90,23 +104,33 @@
         <div class="section">
             <div class="row">
                 <h7 class="black-text">
-                    The MoSDeF tools have been designed to facilitate the hierarchical construction of both atomistic and coarse-grained system configurations, the application of classical force fields (i.e., atom-typing),
-                    encapsulation of chemical topology information, and the generation of input files for a variety of molecular dynamics and Monte Carlo simulation engines, including LAMMPS, GROMACS, HOOMD-Blue, Cassandra, and GOMC.
+                    The MoSDeF tools have been designed to facilitate the hierarchical construction of both atomistic
+                    and coarse-grained system configurations, the application of classical force fields (i.e.,
+                    atom-typing),
+                    encapsulation of chemical topology information, and the generation of input files for a variety of
+                    molecular dynamics and Monte Carlo simulation engines, including LAMMPS, GROMACS, HOOMD-Blue,
+                    Cassandra, and GOMC.
                 </h7>
             </div>
-            <div class="row">
+            <div class="row center">
                 <div class="col s12 l8">
-                    <div id="pdf-container" class="hide-on-med-and-down">
-                          <div id="slideLoader" class="progress" style="width: 100%; background-color: maroon">
-                              <div class="determinate"></div>
+                    <div id="slides-container" class="hide-on-med-and-down">
+                          <div id="mosdefSlides" class="carousel carousel-slider" data-indicators="true">
+                              <a href="#one!" class="carousel-item"><img src="images/slides/0001.jpg"></a>
+                              <a href="#two!" class="carousel-item"><img src="images/slides/0002.jpg"></a>
+                              <a href="#three!" class="carousel-item"><img src="images/slides/0003.jpg"></a>
+                              <a href="#four!" class="carousel-item"><img src="images/slides/0004.jpg"></a>
+                              <a href="#five!" class="carousel-item"><img src="images/slides/0005.jpg"></a>
+                              <a href="#six!" class="carousel-item"><img src="images/slides/0006.jpg"></a>
+                              <a href="#seven!" class="carousel-item"><img src="images/slides/0007.jpg"></a>
+                              <a href="#!eight" class="carousel-item"><img src="images/slides/0008.jpg"></a>
+                              <a href="#nine!" class="carousel-item"><img src="images/slides/0009.jpg"></a>
                           </div>
-                        <i id="prevSlide" class="slide-icon fa fa-chevron-left fa-2x"></i>
-                        <i id="nextSlide" class="slide-icon fa fa-chevron-right fa-2x"></i>
-                        <canvas id="pdf-canvas" class="carousel-item"></canvas>
                     </div>
                 </div>
                 <div class="col s12 l4">
-                    <img src="./images/slideshow.png" style="max-width: 100%;" alt="mosdef-slideshow"/>
+                        <img src="./images/slideshow.png" style="max-width: 100%;margin-top: 10%"
+                             alt="mosdef-slideshow"/>
                 </div>
             </div>
         </div>
@@ -114,7 +138,7 @@
         <div class="section">
             <div class="row" style="text-align: justify;">
                 <div class="col s12 l4">
-                    <h4>True Simulations</h4>
+                    <h4>TRUE Simulations</h4>
                     <p class="text-justify">
                         Through the MoSDeF integrated framework, the exact procedures used to set up and perform
                         simulation workflows and associated metadata (i.e. the provenance) can be scripted,
@@ -125,18 +149,23 @@
                             href="https://www.tandfonline.com/doi/full/10.1080/00268976.2020.1742938"
                             target="_blank">paper</a> highlights these principles in details.
                     </p>
-                    <img style="max-width: 100%" src="images/TRUESIMS.png" alt="True Simulations"/>
+                    <div class="center-align">
+                        <img style="max-width: 100%" src="images/TRUESIMS.png" alt="True Simulations"/>
+                    </div>
                 </div>
                 <div class="col s12 l4">
                     <h4>Flexibility</h4>
                     <p class="text-justify">
-                        System construction and initialization are performed in a simulation engine agnostic fashion, allowing users to use a single set of scripts to generate inputs for a variety of different simulation engines.
+                        System construction and initialization are performed in a simulation engine agnostic fashion,
+                        allowing users to use a single set of scripts to generate inputs for a variety of different
+                        simulation engines.
                         <br>
-                        Because systems are constructed in a hierarchical, scriptable fashion, modifications to system chemistry can be easily made, allowing for screening over chemical space.
-                        <div class="hide-on-med-and-down">
-                            <br>
-                        </div>
+                        Because systems are constructed in a hierarchical, scriptable fashion, modifications to system
+                        chemistry can be easily made, allowing for screening over chemical space.
                     </p>
+                    <div class="hide-on-med-and-down">
+                        <br>
+                    </div>
                     <div class="center-align">
                         <img style="max-width: 100%;" src="images/flexibility.png"
                              alt="Flexibility"/>
@@ -145,67 +174,89 @@
                 <div class="col s12 l4">
                     <h4>Community</h4>
                     <p class="text-justify">
-                        MoSDeF is designed to allow system construction scripts to be easily made into easy to distribute libraries; similarly, forcefield files contain parameters and their usage rules that can be easily shared and version controlled.
+                        MoSDeF is designed to allow system construction scripts to be easily made into easy to
+                        distribute libraries; similarly, forcefield files contain parameters and their usage rules that
+                        can be easily shared and version controlled.
                     </p>
 
                     <a href="https://groups.google.com/g/mosdef-users"
                        target="_blank"><h6>Join the mailing list</h6></a>
                     <a href="https://gitter.im/mosdef-hub/Lobby" target="_blank"><h6>Mosdef Gitter </h6></a>
                     <a href="https://github.com/mosdef-hub" target="_blank"><h6>Github Organization</h6></a>
-                    <img src="images/community.png" style="max-width: 100%" alt="community"/>
+                    <div class="hide-on-med-and-down">
+                        <br>
+                    </div>
+                    <div class="center-align">
+                        <img src="images/community.png" style="max-width: 100%" alt="community"/>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="divider"></div>
         <div class="section">
-            <div class="row center">
-                <h4 id="ecoSystem" class="col s12 light header center">Quick Start</h4>
-            </div>
             <div class="row">
-                <h7 class="black-text">
-                    The easiest way to get started with <b>MoSDeF</b> is to go through our tutorials. Below is a
-                    curated list of quick start guides:
-                </h7>
-                <div class="col l6 m8 s12">
-                    <div class="collection">
-                        <div class="collection-item black-text">
-                            <b>MoSDeF Tutorials</b>: Curated
-                            tutorials for the <b>MoSDeF</b> Framework
-                            <div style="float: right">
-                              <a class="black-text" href="https://github.com/mosdef-hub/mosdef_tutorials" target="_blank"><i
-                                    class="fa fa-github fa-2x"></i></a>
-                                <a target="_blank"
-                                href="https://mybinder.org/v2/gh/mosdef-hub/mbuild_tutorials/master"
-                                rel="nofollow">
-                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="Binder" data-canonical-src="https://mybinder.org/badge.svg" style="max-width: 100%;"></a>
-                            </div>
-                        </div>
-                        <div class="collection-item black-text">
-                                    <b>mBuild Tutorials</b>: A curated list of tutorials for mBuild
-                            <div style="float: right">
-                                <a class="black-text"
-                                           href="https://github.com/mosdef-hub/mbuild_tutorials"
-                                   target="_blank"><i
-                                        class="fa fa-github fa-2x"></i></a>
-                                <a target="_blank"
-                                   href="https://mybinder.org/v2/gh/mosdef-hub/mbuild_tutorials/master"
-                                   rel="nofollow">
-                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="Binder" data-canonical-src="https://mybinder.org/badge.svg" style="max-width: 100%;"></a>
-                            </div>
-                        </div>
-                        <div class="collection-item black-text">
-                            <b>Foyer Tutorials</b>: Curated
-                            tutorials for the foyer
-                            <div style="float: right">
-                              <a class="black-text" href="https://github.com/mosdef-hub/foyer_tutorials"
-                                 target="_blank"><i
-                                    class="fa fa-github fa-2x"></i></a>
-                                <a target="_blank"
-                                href="https://mybinder.org/v2/gh/mosdef-hub/foyer_tutorials/master"
-                                rel="nofollow">
-                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="Binder" data-canonical-src="https://mybinder.org/badge.svg" style="max-width: 100%;"></a>
-                            </div>
-                        </div>
+                <div class="col l6 m12 s12">
+                    <h4 id="ecoSystem" class="col s12 light header center">Quick Start</h4>
+                    <h7 class="black-text">
+                        The easiest way to get started with <b>MoSDeF</b> is to go through our tutorials. Below is a
+                        curated list of quick start guides:
+                    </h7>
+                    <table class="striped">
+                        <thead>
+                        <tr>
+                            <th>Details</th>
+                            <th style="text-align: center">GitHub</th>
+                            <th style="text-align: center">Binder</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td><b>MosDeF Tutorials</b>: Curated tutorials for the MosDeF Framework</td>
+                            <td style="text-align: center"><a class="black-text"
+                                                              href="https://github.com/mosdef-hub/mosdef_tutorials"
+                                                              target="_blank">
+                                <i class="fa fa-github fa-2x"></i></a></td>
+                            <td style="text-align: center"><a target="_blank"
+                                                              href="https://mybinder.org/v2/gh/mosdef-hub/mbuild_tutorials/master"
+                                                              rel="nofollow">
+                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667"
+                                     alt="Binder" data-canonical-src="https://mybinder.org/badge.svg"
+                                     style="max-width: 100%;"></a></td>
+                        </tr>
+                        <tr>
+                            <td><b>mBuild Tutorials</b>: Curated tutorials for mBuild</td>
+                            <td style="text-align: center"><a class="black-text"
+                                                              href="https://github.com/mosdef-hub/mbuild_tutorials"
+                                                              target="_blank">
+                                <i class="fa fa-github fa-2x"></i></a></td>
+                            <td style="text-align: center"><a target="_blank"
+                                                              href="https://mybinder.org/v2/gh/mosdef-hub/mbuild_tutorials/master"
+                                                              rel="nofollow">
+                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667"
+                                     alt="Binder" data-canonical-src="https://mybinder.org/badge.svg"
+                                     style="max-width: 100%;"></a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Foyer Tutorials</b>: Curated tutorials for Foyer</td>
+                            <td style="text-align: center"><a class="black-text"
+                                                              href="https://github.com/mosdef-hub/foyer_tutorials"
+                                                              target="_blank"><i
+                                    class="fa fa-github fa-2x"></i></a></td>
+                            <td style="text-align: center"><a target="_blank"
+                                                              href="https://mybinder.org/v2/gh/mosdef-hub/foyer_tutorials/master"
+                                                              rel="nofollow">
+                                <img src="https://camo.githubusercontent.com/aa6359bb47ca71509b05d2981fc5c878ab6a6601fe88445c375c3f0a7e20e36d/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667"
+                                     alt="Binder" data-canonical-src="https://mybinder.org/badge.svg"
+                                     style="max-width: 100%;"></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col l5 m12 s12 offset-l1 left-align">
+                    <h4 class="col s12 light header center">Quick Peek</h4>
+                    <div>
+                        <img class="responsive-img" src="images/mosdef-glance.png"/>
                     </div>
                 </div>
             </div>
@@ -247,7 +298,6 @@
                                     class="material-icons">more</i></a>
                             <a class="btn-floating halfway-fab waves-effect waves-light black"
                                href=https://github.com/mosdef-hub/foyer target="_blank"><i class="fa fa-github"></i></a>
-
                         </div>
                     </div>
                 </div>
@@ -276,37 +326,76 @@
                 <div class="col s12 l6">
                     <h5>Other MoSDeF Projects</h5>
                     <div class="collection">
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/forcefield_template" target="_blank"><b>Forcefield Template</b>: A template repo for disseminating force fields with foyer</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/nanoparticle_optimization" target="_blank"><b>Nanoparticle Optimization</b>: Deriving potentials for coarse-grained nanoparticles via potential-matching</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/msibi" target="_blank"><b>MultiState Boltzmann Inversion (MS-IBI)</b>: Manage and run pair potential optimizations using multistate iterative Boltzmann inversion</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/mosdef_tutorials" target="_blank"><b>MoSDeF Tutorials</b>: A set of tutorials to introduce new users to the MoSDeF (Molecular Simulation Design Framework) toolkit</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/mbuild_tutorials" target="_blank"><b>mBuild Tutorials</b>: A set of tutorials to introduce new users to mBuild</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/foyer_tutorials" target="_blank"><b>foyer Tutorials</b>: A set of tutorials to introduce new users to foyer</a>
+                        <div class="collection-item"><a href="https://github.com/mosdef-hub/forcefield_template"
+                                                        target="_blank"><b>Forcefield Template</b></a>: A template repo
+                            for disseminating force
+                            fields with foyer
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/mosdef-hub/nanoparticle_optimization"
+                                                        target="_blank"><b>Nanoparticle Optimization</b></a>: Deriving
+                            potentials for
+                            coarse-grained nanoparticles via potential-matching
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/mosdef-hub/msibi"
+                                                        target="_blank"><b>MultiState Boltzmann Inversion
+                            (MS-IBI)</b></a>: Manage and run pair
+                            potential optimizations using multistate iterative Boltzmann inversion
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/mosdef-hub/mosdef_tutorials"
+                                                        target="_blank"><b>MoSDeF Tutorials</b></a>: A set of tutorials
+                            to introduce new users to the MoSDeF (Molecular Simulation Design Framework) toolkit
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/mosdef-hub/mbuild_tutorials"
+                                                        target="_blank"><b>mBuild Tutorials</b></a>: A set of tutorials
+                            to introduce new users to
+                            mBuild
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/mosdef-hub/foyer_tutorials"
+                                                        target="_blank"><b>foyer Tutorials</b></a>: A set of tutorials
+                            to introduce new users to
+                            foyer
+                        </div>
                     </div>
                 </div>
                 <div class="col s12 l6">
                     <h5>Projects Using MoSDeF</h5>
                     <div class="collection">
-                        <a class="collection-item black-text" href="https://github.com/MaginnGroup/mosdef_cassandra" target="_blank"><b>MoSDeF
-                            Cassandra</b>:
-                            MoSDeF compatible wrapper for Cassandra Monte Carlo code</a>
-                        <a class="collection-item black-text" href="https://github.com/cmelab/planckton" target="_blank"><b>planckton</b>: Reproducible
-                            exploration of organic photovoltaic morphology self-assembly using molecular dynamics.</a>
-                        <a class="collection-item black-text"
-                           href="https://github.com/colinebunner/MoSDeF-CP2K-Writer" target="_blank"><b>ModDeF
-                            -CP2K-Writer</b>: Scripted control and better documentation of CP2K simulations in accord
-                            with
-                            the goals of the CSSI MoSDeF project</a>
-                        <a class="collection-item black-text" href="https://github.com/gmso_showcase"
-                           target="_blank"><b>GMSO Showcase</b>: Interactive demo/tutorial of current GMSO features and design decisions.</a>
-                        <a class="collection-item black-text" href="https://github.com/cmelab/grits"
-                           target="_blank"><b>GRiTS</b>: GRiTS Reduces/Restores Topology with SMILES</a>
-                        <a class="collection-item black-text" href="https://github.com/mosdef-hub/mosdef-workflows"
-                           target="_blank"><b>MoSDeF Workflows</b>: Sample molecular simulation workflows using
-                            MoSDeF</a>
+                        <div class="collection-item"><a href="https://github.com/MaginnGroup/mosdef_cassandra"
+                                                        target="_blank"><b>MoSDeF
+                            Cassandra</b></a>:
+                            MoSDeF compatible wrapper for Cassandra Monte Carlo code
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/cmelab/planckton" target="_blank"><b>
+                            planckton</b></a>: Reproducible
+                            exploration of organic photovoltaic morphology self-assembly using molecular dynamics.
+                        </div>
+                        <div class="collection-item">
+                            <a href="https://github.com/colinebunner/MoSDeF-CP2K-Writer"
+                               target="_blank"><b>MosDeF-CP2K-Writer</b></a>: Scripted control and better documentation
+                            of CP2K simulations in accord with the goals of the CSSI MoSDeF project
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/gmso_showcase"
+                                                        target="_blank"><b>GMSO Showcase</b></a>: Interactive
+                            demo/tutorial of current GMSO features
+                            and design decisions.
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/cmelab/grits"
+                                                        target="_blank"><b>GRiTS</b></a>: GRiTS Reduces/Restores
+                            Topology with SMILES
+                        </div>
+                        <div class="collection-item"><a href="https://github.com/mosdef-hub/mosdef-workflows"
+                                                        target="_blank"><b>MoSDeF Workflows</b></a>: Sample molecular
+                            simulation workflows using
+                            MoSDeF
+                        </div>
                     </div>
                 </div>
             </div>
+            <p class="black-text">Also, checkout projects from our collaborators:
+                <a href="https://github.com/cmelab" target="_blank">Boise State</a> |
+                <a href="https://github.com/glotzerlab" target="_blank">Michigan</a> |
+                <a href="https://github.com/MaginnGroup" target="_blank">Notre Dame</a>.
+            </p>
         </div>
         <div class="divider"></div>
         <div class="section">
@@ -318,7 +407,7 @@
                     Innovation (CSSI) grant funded by the National Science Foundation Office of Advanced
                     Cyberinfrastructure.</p>
             </div>
-            <div class="row center carousel">
+            <div id="colabUniversities" class="row center carousel">
                 <div class="card carousel-item hoverable colab-universities col s8 m4 l3 center">
                     <a href="https://vanderbilt.edu/" alt="Vanderbilt University" target="_blank">
                         <img src="images/Vanderbilt_University_logo.svg" alt="Vandy">
@@ -493,16 +582,7 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"
-        integrity="sha512-qa1o08MA0596eSNsnkRv5vuGloSKUhY09O31MY2OJpODjUVlaL0GOJJcyt7J7Z61FiEgHMgBkH04ZJ+vcuLs/w=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js" integrity="sha512-S9Dwzi4TCjPQkxlaXsqQLj2gXUjPZk4HBzE7zWU6Itc1r2RNmlBrVLH4EsYQrdnzLgvkN8P7l9SCru+2I4rZwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf_viewer.min.css" integrity="sha512-QgMseQTq9BTHUqgaL1BvhJeR/LzcBL1pqisRRZycVB+wf5yu8Qwl+4Hm0gDBMEc0Iko/rv4YZpfLFH/Vql6h5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf_viewer.min.js" integrity="sha512-HHaazac37S06LqVUJyMJflHrqLu4oqg//lOiiI1aCkRFnVtcym4zMhMVWFILeYX5aefDH6wQy6SWInAvdGxrRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
-<script src="js/slide-show.js"></script>
 </body>
 
 </html>

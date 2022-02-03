@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    let isPaused = false;
+    let isUniSlidesPaused = false;
+    let isMosdefSlidesPaused = false;
     // get started button scrolling
     (function () {
         var btn = document.getElementById('get-started-btn');
@@ -30,31 +31,35 @@ $(document).ready(function () {
 
     });
 
-
-    $('.carousel.carousel-slider').carousel({
+    $("#mosdefSlides").carousel({
         fullWidth: true,
         indicators: true
     });
 
-     $('.carousel-slider').carousel({
-        fullWidth: true,
-        indicators: true
-    });
-
-    $('.carousel').carousel({
-        duration: 200
-    });
+    $("#colabUniversities").carousel();
 
     setInterval(() => {
-        if (!isPaused) {
-            $('.carousel').carousel('next')
+        if (!isUniSlidesPaused) {
+            $('#colabUniversities').carousel('next');
         }
     }, 5000);
 
-    $('.carousel').hover(() => {
-        isPaused = true;
+    setInterval(() => {
+        if (!isMosdefSlidesPaused) {
+            $('#mosdefSlides').carousel('next');
+        }
+    }, 5000);
+
+    $('#colabUniversities').hover(() => {
+        isUniSlidesPaused = true;
     }, () => {
-        isPaused = false;
-    })
+        isUniSlidesPaused = false;
+    });
+
+    $('#mosdefSlides').hover(() => {
+        isMosdefSlidesPaused = true;
+    }, () => {
+        isMosdefSlidesPaused = false;
+    });
 
 });

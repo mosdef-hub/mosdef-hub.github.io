@@ -65,25 +65,27 @@ button:disabled {
     height: 180px;
 }
 
-.slide-icon {
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    text-indent: 0;
     cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #c0ca33;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+    opacity: 0.5;
 }
 
-#pdf-container {
-    position: relative;
+.carousel .indicators .indicator-item:hover {
+    opacity: 0.8;
 }
 
-i#prevSlide {
-    position: absolute;
-    top: 50%;
-    left: -2%;
-    z-index: 1000;
-    display: none;
-}
 
-i#nextSlide {
-    position: absolute;
-    top: 50%;
-    left: 95%;
-    display: none;
+.carousel .indicators .indicator-item.active {
+    background-color: #ffab00;
+    opacity: 0.8;
 }
