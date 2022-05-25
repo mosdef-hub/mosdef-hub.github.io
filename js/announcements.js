@@ -28,6 +28,17 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     await populateContainer('mbuild', 'mbReleasesDiv');
     await populateContainer('foyer', 'foyerReleasesDiv');
-    await populateContainer('gmso', 'gmsoReleasesDiv')
-
+    await populateContainer('gmso', 'gmsoReleasesDiv');
 });
+
+window.onload = () => {
+     const allNewEvents = document.querySelectorAll('.new-highlight');
+
+    allNewEvents.forEach((tag) => {
+        const removeAfter = tag.dataset.removeAfter;
+        if (removeAfter && new Date() < new Date(removeAfter)) {
+            tag.style.color='red';
+            tag.style.display='inline';
+        }
+    });
+};
