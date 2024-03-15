@@ -66,38 +66,54 @@
 <main id="main">
     <div class="row container">
         <h3 class="black-text flow-text"> Forcefields for Foyer and GMSO </h3>
+        <div class="csl-left-margin" class="csl-right-inline" style="margin: 0 .4em 0 2.5em;">
+            Force fields in the MoSDeF ecosystem are stored on disk in either the 
+            <a href="https://gmso.mosdef.org/en/stable/data_structures.html#forcefield">GMSO style</a> 
+            or <a href="https://foyer.mosdef.org/en/stable/reference/ffclass.html#forcefield-class">Foyer style</a>. 
+            While force fielding for molecular simulations is a subtle art, we do offer general forcefields, listed below, 
+            that contain useful parameter sets. To find individual parameters sources, check the &<doi> tag in the atomtype 
+            section of the <b>.xml</b> file. While parameterization may complete without errors for large forcefields, strict validation and 
+            hand-checking with parameters known <em>a priori</em> is always best practice.
+        </div>
         <div class="csl-bib-body" style="line-height: 1.35; ">
             <div class="csl-entry" style="clear: left; ">
                 <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 2em;">
                     (1)
                 </div>
                 <div class="csl-right-inline" style="margin: 0 .4em 0 2.5em;">
-                    <a href="https://github.com/mosdef-hub/foyer/tree/main/foyer/forcefields/xml">Built-in Force Fields: OPLS-AA and TraPPE-UA</a>
+                    <a href="https://github.com/mosdef-hub/foyer/blob/main/foyer/forcefields/xml/oplsaa.xml">Organic Potentials for Liquid Simluations: OPLS-AA</a>
                 </div>
                 <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 2em;">
                     (2)
                 </div>
                 <div class="csl-right-inline" style="margin: 0 .4em 0 2.5em;">
-                    <a href="https://github.com/rsdefever/GAFF-foyer">GAFF</a>
+                    <a href="https://github.com/mosdef-hub/foyer/blob/main/foyer/forcefields/xml/trappe-ua.xml">Transferable Potentials for Phase Equilibria Force: TraPPE-UA</a>
                 </div>
                 <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 2em;">
                     (3)
                 </div>
                 <div class="csl-right-inline" style="margin: 0 .4em 0 2.5em;">
-                    <a href="https://github.com/PTC-CMC/atools/blob/master/atools/forcefields/oplsaa.xml">Coated Monolayers</a>
+                    <a href="https://github.com/rsdefever/GAFF-foyer">General Amber Force Field: GAFF</a>
                 </div>
                 <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 2em;">
                     (4)
                 </div>
                 <div class="csl-right-inline" style="margin: 0 .4em 0 2.5em;">
-                    <a href="https://github.com/mosdef-hub/forcefield_perfluoroethers/blob/master/perfluoroethers/xml/PFE.xml">Perfluoroethers</a>
+                    <a href="https://github.com/PTC-CMC/atools/blob/master/atools/forcefields/oplsaa.xml">Alkylsilane Coated Monolayers Force Field</a>
                 </div>
                 <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 2em;">
-                    (4)
+                    (5)
                 </div>
                 <div class="csl-right-inline" style="margin: 0 .4em 0 2.5em;">
-                    <a href="https://github.com/mosdef-hub/forcefield_perfluoroethers/blob/master/perfluoroethers/xml/PFE.xml">
-                        Tested GMSO Forcefields:</a> TIP3P, TIP4P-EWALD, SPC/E, ff14SB, CHARMM36, GAFF, OPLS-AA, TRAPPE-UA</a>
+                    <a href="https://github.com/mosdef-hub/forcefield_perfluoroethers/blob/master/perfluoroethers/xml/PFE.xml">Perfluoroethers CHARMM Force Field</a>
+                </div>
+                <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 2em;">
+                    (6)
+                </div>
+                <div class="csl-right-inline" style="margin: 0 .4em 0 2.5em;">
+                    <a href="https://github.com/mosdef-hub/gmso/tree/main/gmso/utils/files/gmso_xmls">
+                        Tested GMSO Snippet Forcefields:</a> TIP3P, TIP4P-EWALD, SPC/E, ff14SB, CHARMM36, GAFF, OPLS-AA, TRAPPE-UA</a>
+                    </br>   (**Note these are not mostly small molecules or pieces of larger forcefields for CI testing/validation in GMSO)
                 </div>
             </div>
             <br/>
