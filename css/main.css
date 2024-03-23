@@ -65,6 +65,11 @@ button:disabled {
     height: 180px;
 }
 
+.carousel .HWimg img {
+    width: 100px;
+    height: 100px;
+}
+
 .carousel .indicators .indicator-item {
     display: inline-block;
     width: 10px;
