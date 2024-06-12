@@ -91,11 +91,22 @@
 </header>
 <main id="main" style="position: relative;">
     <div class="section no-pad-bot banner-background">
-        <div class="row center">
+        <div class="row center" style="width: 50%">
             <h3 class="white-text"> Molecular Simulation Design Framework (MoSDeF)</h3>
             <p class="subtitle white-text">
-                MoSDeF presents a set of extensible Python tools designed to facilitate the initialization,
-                <br> atom-typing, and screening of soft matter systems using molecular simulation.
+                MoSDeF is a multi-university collaboration focused on the development of software
+                that enables more reproducible scientific workflows.
+                MoSDeF presents a set of extensible Python tools designed to facilitate the initialization, atom-typing,
+                and screening of soft matter systems using molecular simulation.
+                <br>
+                <br> MoSDeF is built around several key pieces of software.
+                The mBuild library is used to generate initial configurations and is designed to allow users
+                to build complex systems from smaller, interchangeable components that can be connected together.
+                The Foyer library provides a force field and simulator agnostic method for defining parameter usage,
+                relying on SMARTS to express the chemical context, providing both human and machine-readable
+                documentation of parameter usage. The GMSO library serves as a general-purpose container for storing
+                parameterized simulations in simulation engine agnostic fashion and routines to create semantically
+                correct input files for various simulation engines.
             </p>
             <div class="row center">
                 <a id="get-started-btn" class="btn-large waves-effect waves-light orange darken-1">Get
