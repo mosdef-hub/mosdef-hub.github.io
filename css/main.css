@@ -94,3 +94,10 @@ button:disabled {
     background-color: #ffab00;
     opacity: 0.8;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
